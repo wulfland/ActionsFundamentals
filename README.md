@@ -6,13 +6,13 @@ Repo for the `GitHub Actions Fundamentals` training.
 
 - Understand the __basic components__ and vocabulary of GitHub Actions
 - Understand the __YAML__ syntax (scalar types, quotes, literal blocks, maps, and sequences)
-- Understand the workflow syntax and how to write workflows using intellisence
-- Understand events that can trigger workflows
-- Learn the context and expression syntax as well as workflow commands
-- Know the different types if actions and how to create/publish them
-- Understand the different hosting options for runners
-- Use Secrets and Environments for staged deployments
-- Workflow templates and reusable workflows
+- Understand the __workflow syntax__ and how to write workflows using intellisence
+- Understand events that can __trigger__ workflows
+- Learn the __context and expression syntax__ as well as workflow commands
+- Know the different types of __actions__ and how to create/publish them
+- Understand the different hosting options for __runners__
+- Use __Secrets__ and __Environments__ for staged deployments
+- Workflow templates and __reusable workflows__
 
 ## Getting ready
 

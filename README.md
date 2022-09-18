@@ -26,25 +26,32 @@ Please follow [these instructions](GettingReady.md) and make sure you have set u
 - [ ] GitHub Actions Fundamentals
 - [ ] The YAML syntax
 - [ ] Basic workflow syntax
+- [ ] Events that trigger workflow
 - [ ] :mag: Demo: Creating a workflow
 - [ ] 🔨 Hands-on: [My first Action workflow](hol/05-My-first-workflow.md)
-- [ ] 
-- [ ] Types of GitHub Actions
+- [ ] Context and expression syntax. workflow commands
+- [ ] :coffee: Break
+- [ ] Steps and GitHub Actions
+- [ ] Types of Actions
 - [ ] 🔨 Hands-on: [My first container Action](hol/06-My-first-action.md)
+- [ ] Typescript and composite actions
+- [ ] Sharing and releasing actions
+- [ ] Using the GitHub API and Octokit
+
+### Day 2
+- [ ] Introduction
+- [ ] Actions for CI/CD
+- [ ] Permissions for GitHub Token
+- [ ] Environments and Secrets
 - [ ] Staged deployments with environments, approvals, and deployment gates
 - [ ] 🔨 Hands-on: [Staged deployments](hol/07-Staged-deployments.md)
-- [ ] GitHub Packages and GitHub Releases
-
-### Optional hands-on labs
-If time permits you can do the following two more exercises to learn to deploy packages and containers to GitHub packages:
-- [ ] 🔨 Hands-on: [Creating and publishing a docker image to ghcr.io](hol/08-Publish-docker-to-ghcr.md) 
-- [ ] 🔨 Hands-on: [Creating and publishing an npm package](hol/09-Publishing-npm-package.md)
-
-If you have an account for a cloud provider you can do one of these hands-on labs to deploy an application to the cloud:
-- [ ] 🔨 Hands-on: [Deploy to Azure App Service](https://github.com/wulfland/AccelerateDevOps/blob/main/ch9_release/Deploy_to_Azure_App_Service.md)
-- [ ] 🔨 Hands-on: [Deploy to AWS Elastic Container Service (ECS)](https://github.com/wulfland/AccelerateDevOps/blob/main/ch9_release/Deploy_to_AWS_ECS.md)
-- [ ] 🔨 Hands-on: [Deploy to Google Kubernetes Engine (GKE)](https://github.com/wulfland/AccelerateDevOps/blob/main/ch9_release/Deploy_to_GKE.md)
-
+- [ ] :coffee: Break
+- [ ] Action policies
+- [ ] Running your workflows
+- [ ] Sharing workflows
+- [ ] 🔨 Hands-on: [Reusable workflows](tbd)
+- [ ] Best practices and security
+- [ ] Job descriptions
 
 ## ⚡ Prerequisites
 

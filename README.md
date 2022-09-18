@@ -27,11 +27,12 @@ Please follow [these instructions](GettingReady.md) and make sure you have set u
 - [ ] The YAML syntax
 - [ ] Basic workflow syntax
 - [ ] Events that trigger workflow
+- [ ] Jobs and steps
 - [ ] :mag: Demo: Creating a workflow
 - [ ] 🔨 Hands-on: [My first Action workflow](hol/05-My-first-workflow.md)
 - [ ] Context and expression syntax. workflow commands
 - [ ] :coffee: Break
-- [ ] Steps and GitHub Actions
+- [ ] GitHub Actions
 - [ ] Types of Actions
 - [ ] 🔨 Hands-on: [My first container Action](hol/06-My-first-action.md)
 - [ ] Typescript and composite actions

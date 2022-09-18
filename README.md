@@ -30,7 +30,7 @@ Please follow [these instructions](GettingReady.md) and make sure you have set u
 - [ ] Jobs and steps
 - [ ] :mag: Demo: Creating a workflow
 - [ ] 🔨 Hands-on: [My first Action workflow](hol/05-My-first-workflow.md)
-- [ ] Context and expression syntax. workflow commands
+- [ ] Advanced [workflow syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
 - [ ] :coffee: Break
 - [ ] GitHub Actions
 - [ ] Types of Actions

@@ -3,8 +3,21 @@
 In this hands-on lab your will create your first GitHub Actions Workflow and learn how you can use Actions to automate tasks in your software development lifecycle. If you like more background information, please refer to the [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) pages on GitHub Docs. Good luck! 👍
 
 This hands on lab consists of the following steps:
+- [Creating a repository](#creating-a-repository)
 - [Creating the workflow](#creating-the-workflow)
 - [Viewing your workflow results](#viewing-your-workflow-results)
+
+## Creating a repository
+
+Go to [Code](/../../) tab of this repository and click `Use this template`:
+
+<img width="400" alt="2022-09-18_11-24-58" src="https://user-images.githubusercontent.com/5276337/190895393-6fa0fad9-e05c-4fea-8126-a291b087d663.png">
+
+Select your GitHub user as the owner and name the repository. Leave the repo public to have unlimited action minutes: 
+
+<img width="400" alt="2022-09-18_11-25-57" src="https://user-images.githubusercontent.com/5276337/190895398-751a1ec9-c1cf-497f-beb7-a6b53d4d911e.png">
+
+Continue now in the new repository.
 
 ## Creating the workflow
 

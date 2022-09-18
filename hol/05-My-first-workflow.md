@@ -2,9 +2,6 @@
 
 In this hands-on lab your will create your first GitHub Actions Workflow and learn how you can use Actions to automate tasks in your software development lifecycle. If you like more background information, please refer to the [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) pages on GitHub Docs. Good luck! 👍
 
-> **Note**:  
-> Before you start with this lab, please remove the branch rule, so you can commit to the main branch without a pull request to speed up the process 😏
-
 This hands on lab consists of the following steps:
 - [Creating the workflow](#creating-the-workflow)
 - [Viewing your workflow results](#viewing-your-workflow-results)
@@ -31,7 +28,7 @@ name: GitHub Actions Demo
   - on every push to the `main` branch, but not when there are changes to files in the `.github` folder.
   - on every pull request with `main` as the base branch
   - Every sunday at 6:15 UTC
-  - Manually by selecting an environment
+  - Manually
 
 <details>
   <summary>Solution</summary>
@@ -46,11 +43,6 @@ on:
   schedule:
     - cron: '15 6 * * 0'
   workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Environment to deploy to'
-        type: environment
-        required: true 
 ```
   
 </details>

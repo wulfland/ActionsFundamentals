@@ -1,6 +1,6 @@
 # 🔨 Hands-on: Reusable workflows
 
-In this hands-on lab you will create a reusable workflow and a workflow that consumes it. You will learn to pass in parameters to the reusable workflow and use output parameters in the consuming workflow.
+In this hands-on lab you will create a [reusable workflow](https://docs.github.com/en/actions/using-workflows/reusing-workflows#creating-a-reusable-workflow) and a workflow that consumes it. You will learn to pass in parameters to the reusable workflow and use output parameters in the consuming workflow.
 
 This hands on lab consists of the following steps:
 - [Creating a reusable workflow](#creating-a-reusable-workflow)
@@ -21,7 +21,7 @@ name: Reusable workflow
   
 </details>
 
-3. Add a `workflow_call` trigger with an input parameter `who-to-greet` that is required.
+3. Add a `workflow_call` trigger with an [input parameter](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_call) `who-to-greet` that is required.
 
 <details>
   <summary>Solution</summary>

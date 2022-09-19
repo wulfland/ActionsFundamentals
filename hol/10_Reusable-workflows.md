@@ -1,11 +1,11 @@
 # 🔨 Hands-on: Reusable workflows
 
-In this hands-on lab you will create a reusable workflow and a workflow that consumes it.
+In this hands-on lab you will create a reusable workflow and a workflow that consumes it. You will learn to pass in parameters to the reusable workflow and use output parameters in the consuming workflow.
 
 This hands on lab consists of the following steps:
 - [Creating a reusable workflow](#creating-a-reusable-workflow)
 - [Adding an output parameter](#adding-an-output-parameter)
-
+- [Consuming the reusable workflow](#consuming-the-reusable-workflow)
 
 ## Creating a reusable workflow
 
@@ -119,9 +119,56 @@ jobs:
   
 </details>
 
+## Consuming the reusable workflow
+
+1. Create a [new file](/../../new/main) `.github/workflows/reuse.yml` (paste the file name with the path in the box).
+2. Set the name to `Reusable workflow` and add a manual trigger.
+
+<details>
+  <summary>Solution</summary>
+  
+```YAML
+name: Reuse other workflow
+
+on: [workflow_dispatch]
+```
+  
+</details>
+
+3. Add a job `call-workflow` that uses the reusable workflow and passes in your user name as an input parameter.
+
+<details>
+  <summary>Solution</summary>
+  
+```YAML
+jobs:
+  call-workflow:
+    uses: ./.github/workflows/reusable.yml
+    with: 
+      who-to-greet: '@wulfland'
+```
+  
+</details>
+
+4. Add another job `use-output` that writes the output parameter `current-time` to the console. (Hint: use the needs context to access the output)
+
+<details>
+  <summary>Solution</summary>
+  
+```YAML
+  use-output:
+    runs-on: ubuntu-latest
+    needs: [call-workflow]
+    steps:
+      - run: echo "Time was ${{ needs.call-workflow.outputs.current-time }}"
+```
+  
+</details>
+
+5. Run the workflow and observe the output.
+
 ## Summary
 
-In this lab you have learned to create and protect environments in GitHub and use them in a workflow. You have also learned to conditionally 
-execute jobs or steps and to chain jobs using the `needs` keeword.
+In this lab you have learned to create a reusable workflow and a workflow that consumes it. You also have learned to pass in parameters to the reusable workflow and to use output parameters in the consuming workflow.
 
-You can continue with the [README](../README.md#part-4--cicd-and-automation).
+You can continue with the [README](../README.md).

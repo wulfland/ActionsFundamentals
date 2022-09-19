@@ -4,6 +4,7 @@ In this hands-on lab your will create environments and a staged deployment workf
 
 This hands on lab is based on [My first workflow](05-My-first-workflow.md) and adds the following steps:
 - [Creating and protecting environments](#creating-and-protecting-environments)
+- [Adding a input for picking environments to manual workflow trigger](#adding-a-input-for-picking-environments-to-manual-workflow-trigger)
 - [Chaining workflow steps and conditional execution](#chaining-workflow-steps-and-conditional-execution)
 - [Reviewing and approving deployments](#reviewing-and-approving-deployments)
 
@@ -21,6 +22,24 @@ This hands on lab is based on [My first workflow](05-My-first-workflow.md) and a
 
 5. Create two more environments. `Test` and `Load-Test` without any restrictions.
 
+## Adding a input for picking environments to manual workflow trigger
+
+Add a input of the type environment to the `workflow_dispatch` trigger.
+
+<details>
+  <summary>Solution</summary>
+  
+```YAML
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        type: environment
+        required: true 
+```
+  
+</details>
+  
 ## Chaining workflow steps and conditional execution 
 
 1. Now add 3 jobs to the workflow file:

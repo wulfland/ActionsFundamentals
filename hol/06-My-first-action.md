@@ -10,7 +10,7 @@ This hands on lab consists of the following steps:
 
 ## Creating the action
 
-1. Create a [new file](/../..new/main) `hello-world-docker-action/action.yml` (paste the file name with the path in the box):
+1. Create a [new file](/../../new/main) `hello-world-docker-action/action.yml` (paste the file name with the path in the box):
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/5276337/174234628-14f58066-3188-42a6-9204-99c577558c08.png">
 
 2. Add content to the `action.yml` file (see the [template](https://github.com/actions/hello-world-docker-action) and 

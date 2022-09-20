@@ -122,7 +122,7 @@ jobs:
 ## Consuming the reusable workflow
 
 1. Create a [new file](/../../new/main) `.github/workflows/reuse.yml` (paste the file name with the path in the box).
-2. Set the name to `Reusable workflow` and add a manual trigger.
+2. Set the name to `Reuse other workflow` and add a manual trigger.
 
 <details>
   <summary>Solution</summary>

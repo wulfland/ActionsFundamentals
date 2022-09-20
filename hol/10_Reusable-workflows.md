@@ -70,7 +70,19 @@ named `current-time` to the current date and time (use `$(date)` for that).
   
 </details>
 
-2. Add an output parameter called `current-time` to `workflow_call` and set it to the outputs of the workflow command.
+2. Add an output called `current-time` to the `reusable-job`.
+
+<details>
+  <summary>Solution</summary>
+  
+```YAML
+   outputs:
+      current-time: ${{ steps.time.outputs.current-time }}
+```
+  
+</details>
+
+3. Add an output parameter called `current-time` to `workflow_call` and set it to the outputs of the workflow command.
 
 <details>
   <summary>Solution</summary>

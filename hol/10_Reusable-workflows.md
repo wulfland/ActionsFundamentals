@@ -21,7 +21,7 @@ name: Reusable workflow
   
 </details>
 
-3. Add a `workflow_call` trigger with an [input parameter](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_call) `who-to-greet` that is required.
+3. Add a `workflow_call` trigger with an [input parameter](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_call) `who-to-greet` of the type `string` that is required. Set the default value to `World`. 
 
 <details>
   <summary>Solution</summary>
@@ -56,8 +56,8 @@ jobs:
 
 ## Adding an output parameter
 
-1. Add an additional step that uses a workflow command to set an output parameter 
-named `current-time` to the current time (use `$(date)` to get current time).
+1. Add an additional step with the id `time` that uses a workflow command to set an output parameter 
+named `current-time` to the current date and time (use `$(date)` for that).
 
 <details>
   <summary>Solution</summary>

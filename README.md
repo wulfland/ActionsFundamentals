@@ -50,7 +50,7 @@ Please follow [these instructions](GettingReady.md) and make sure you have set u
 - [ ] Action policies
 - [ ] Running your workflows
 - [ ] Sharing workflows
-- [ ] 🔨 Hands-on: [Reusable workflows](tbd)
+- [ ] 🔨 Hands-on: [Reusable workflows](hol/10_Reusable-workflows.md)
 - [ ] Best practices and security
 - [ ] Job descriptions
 

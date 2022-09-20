@@ -5,6 +5,7 @@ on: [create, workflow_dispatch]
 jobs:
   initialize_repo:
     runs-on: ubuntu-latest
+    if: ${{ github.ref == "refs/heads/main" }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2.4.2
@@ -12,7 +13,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh issue create -t "🐞 Fix game" -l bug -b "The game is broken ⚡  because it is too slow. Go to [docs/index.html](../blob/main/docs/index.html#L78) line 78 and adjust `start` and `min` properties of speed and set the to the following values:
+          gh issue create -t "❓ What is your experience with GitHub?" -b "What is your experience with GitHub? Whats is your experience with other CI/CD tools? Comment below 👇"
+          gh issue create -t "🔍 Retro Day one: What was good?" -b "What did you like at day one of this course? What was good? Comment below 👇"
+          gh issue create -t "🔍 Retro Day one: What can be improved?" -b "What can be improved? What was missing? Any additional comments? Comment below 👇"
+          gh issue create -t "❤️ What was the best feature you learned yesterday?" -b "What was the GitHub Actions feature you liked best that you have learned about yesterday the first time?
 
-          speed   = { start: 0.6, decrement: 0.005, min: 0.1 }"
-          
+If you want add your hobby to share it with the group. Comment below 👇"

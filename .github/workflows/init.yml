@@ -5,7 +5,7 @@ on: [create, workflow_dispatch]
 jobs:
   initialize_repo:
     runs-on: ubuntu-latest
-    if: ${{ github.ref == "refs/heads/main" }}
+    if: ${{ github.ref == 'refs/heads/main' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2.4.2

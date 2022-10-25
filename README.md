@@ -38,6 +38,7 @@ Please follow [these instructions](GettingReady.md) and make sure you have set u
 - [ ] Typescript and composite actions
 - [ ] Sharing and releasing actions
 - [ ] Using the GitHub API and Octokit
+- [ ] Job descriptions
 
 ### Day 2
 - [ ] Introduction
@@ -52,7 +53,7 @@ Please follow [these instructions](GettingReady.md) and make sure you have set u
 - [ ] Sharing workflows
 - [ ] 🔨 Hands-on: [Reusable workflows](hol/10_Reusable-workflows.md)
 - [ ] Best practices and security
-- [ ] Job descriptions
+
 
 ## ⚡ Prerequisites
 
